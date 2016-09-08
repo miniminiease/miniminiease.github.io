@@ -51,14 +51,14 @@ var MainCtrl = function($scope, $location, $compile, $filter) {
       $scope.ui = {
          home_url: 'page.home.html',
          carousel_imgs: [
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/donebydeer/09_DonebyDeer-grey_hrs.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/donebydeer/10_bedlinen.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/02_08_3280.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/10_1757.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/11_illums%2038675.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/ismini/01_ISI%20Baby_0897.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/nanami/08_MG_7299%20-%20kopie.jpg',
-            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/nanami/11_MG_9850.jpg'
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/01_MG_7299%20-%20kopie.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/02_MG_7330.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/03_09_3314.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/04_illums%2038678.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/05_meet-and-eat-blue.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/06_DonebyDeer-grey_hrs.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/07_ISI%20Baby_0820.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/08_ISI%20Baby_0897.jpg'
          ]
       };
       $scope.menu_list = [
