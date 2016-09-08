@@ -17,43 +17,49 @@ var MainCtrl = function($scope, $location, $compile, $filter) {
       $location.path($scope.curr_menu.key + '_' + _item.key);
    };
 
-	$scope.initCarousel = function() {
-		var carousel_html = [];
-		carousel_html.push('<div id="ease-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">');
-		// Indicators
-		carousel_html.push(	'<ol class="carousel-indicators">');
-		for(var i=0; i<$scope.ui.carousel_imgs.length; ++i)
-			carousel_html.push('<li data-target="#ease-carousel" data-slide-to="' + i + '" class="' + (i==0?'active':'') + '"></li>');
-		carousel_html.push(	'</ol>');
-		// Wrapper for slides
-		carousel_html.push(	'<div class="carousel-inner" role="listbox">');
-		for(var i=0; i<$scope.ui.carousel_imgs.length; ++i) {
-			carousel_html.push('<div class="item' + (i==0?' active':'') + '">');
-			carousel_html.push(	'<img src="' + $scope.ui.carousel_imgs[i] + '">');
-			carousel_html.push('</div>');
-		}
-		carousel_html.push(	'</div>');
-		// Left and right controls
-		carousel_html.push(	'<a class="left carousel-control" href="#ease-carousel" role="button" data-slide="prev">');
-		carousel_html.push(		'<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>');
-		carousel_html.push(		'<span class="sr-only">Previous</span>');
-		carousel_html.push(	'</a>');
-		carousel_html.push(	'<a class="right carousel-control" href="#ease-carousel" role="button" data-slide="next">');
-		carousel_html.push(		'<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>');
-		carousel_html.push(		'<span class="sr-only">Next</span>');
-		carousel_html.push(	'</a>');
-		carousel_html.push('</div>');
-		$('.row .home').html( $compile(carousel_html.join(''))($scope) );
-	};
+   $scope.initCarousel = function() {
+      var carousel_html = [];
+      carousel_html.push('<div id="ease-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">');
+      // Indicators
+      carousel_html.push(  '<ol class="carousel-indicators">');
+      for(var i=0; i<$scope.ui.carousel_imgs.length; ++i)
+         carousel_html.push('<li data-target="#ease-carousel" data-slide-to="' + i + '" class="' + (i==0?'active':'') + '"></li>');
+      carousel_html.push(  '</ol>');
+      // Wrapper for slides
+      carousel_html.push(  '<div class="carousel-inner" role="listbox">');
+      for(var i=0; i<$scope.ui.carousel_imgs.length; ++i) {
+         carousel_html.push('<div class="item' + (i==0?' active':'') + '">');
+         carousel_html.push(  '<img src="' + $scope.ui.carousel_imgs[i] + '">');
+         carousel_html.push('</div>');
+      }
+      carousel_html.push(  '</div>');
+      // Left and right controls
+      carousel_html.push(  '<a class="left carousel-control" href="#ease-carousel" role="button" data-slide="prev">');
+      carousel_html.push(     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>');
+      carousel_html.push(     '<span class="sr-only">Previous</span>');
+      carousel_html.push(  '</a>');
+      carousel_html.push(  '<a class="right carousel-control" href="#ease-carousel" role="button" data-slide="next">');
+      carousel_html.push(     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>');
+      carousel_html.push(     '<span class="sr-only">Next</span>');
+      carousel_html.push(  '</a>');
+      carousel_html.push('</div>');
+      $('.row .home').html( $compile(carousel_html.join(''))($scope) );
+   };
 
    /* Private */
    function init() {
       $scope.ui = {
          home_url: 'page.home.html',
-			carousel_imgs: [
-				'imgs/brand/donebydeer/01_soft-storage.jpg',
-				'imgs/brand/fabulousgoose/01_illums 38784.jpg'
-			]
+         carousel_imgs: [
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/donebydeer/09_DonebyDeer-grey_hrs.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/donebydeer/10_bedlinen.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/02_08_3280.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/10_1757.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/fabulousgoose/11_illums%2038675.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/ismini/01_ISI%20Baby_0897.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/nanami/08_MG_7299%20-%20kopie.jpg',
+            'https://dl.dropboxusercontent.com/u/655552/miniease/brand/nanami/11_MG_9850.jpg'
+         ]
       };
       $scope.menu_list = [
          { display: 'about', key: 'about', url: 'page.about.html' },
