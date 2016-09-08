@@ -69,5 +69,13 @@ table.list td {
 
 /* brand */
 .row.brand-img {
-	margin-top: 50px;
+   margin-top: 50px;
+}
+
+/* carousel */
+.carousel-control.left,
+.carousel-control.left:hover,
+.carousel-control.right,
+.carousel-control.right:hover {
+   background-image: none;
 }
