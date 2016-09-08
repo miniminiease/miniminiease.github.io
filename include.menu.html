@@ -1,0 +1,12 @@
+<ul>
+   <li ng-repeat="item in menu_list"
+       ng-click="setMenu(item)"
+       ng-class="{true:'active', false:''}[curr_menu==item]">
+      {{item.display}}
+      <ul ng-if="item.sub">
+         <li ng-repeat="sub in item.sub"
+             ng-click="setSub(sub, $event)"
+             ng-class="{true:'active', false:''}[curr_sub==sub]">{{sub.display}}</li>
+      </ul>
+   </li>
+</ul>
