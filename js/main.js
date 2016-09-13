@@ -51,6 +51,7 @@ var MainCtrl = function($scope, $location, $compile, $filter) {
       $scope.ui = {
          home_url: 'page.home.html',
          carousel_imgs: [
+            'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/00_cover_01.png',
             'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/01_MG_7299%20-%20kopie.jpg',
             'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/02_MG_7330.jpg',
             'https://dl.dropboxusercontent.com/u/655552/miniease/carousel/03_09_3314.jpg',
