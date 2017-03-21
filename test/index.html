@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="me">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,96 +9,27 @@
 
    <title>mini ease</title>
 
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+   <!-- js -->
+   <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+   <script type="text/javascript" src="js/angular.min.js"></script>
 
-   <style type="text/css">
-      body {
-         font-family: 'Droid Serif';
-         margin: 0;
-         padding: 0;
-      }
+   <!-- js defer: will not run until after the page has loaded -->
+   <script defer type="text/javascript" src="js/main.js"></script>
+   <script defer type="text/javascript" src="js/app.js"></script>
 
-      .logo-image {
-         max-height: 140px;
-         height: auto;
-         max-width: 100%;
-         margin: 7em 0 2em 0;
-      }
-
-      .navbar-menu {
-         display: block;
-         text-align: center;
-         border-top: 4px double #d3d3d3;
-         border-bottom: 4px double #d3d3d3;
-         width: 892px;
-         margin: 0;
-      }
-
-      ul {
-         font-family: "PT Sans Narrow";
-         padding: 0;
-         display: inline-block;
-         list-style: none;
-         margin: 0px 0px 0px 0px;
-      }
-
-      ul li {
-         font-weight: 400;
-         display: inline-block;
-         margin: 0 5px;
-         padding: 15px 10px 16px 10px;
-         line-height: 1em;
-      }
-
-      ul li a {
-         color: rgba(78, 78, 78, 1);
-         font-weight: 400;
-         margin-left: 10px;
-         margin-right: 10px;
-         text-decoration: none;
-         line-height: 1em;
-         text-transform: uppercase;
-         font-size: 16px;
-         -webkit-transition: color 0.15s linear;
-         -moz-transition: color 0.15s linear;
-         -o-transition: color 0.15s linear;
-         -ms-transition: color 0.15s linear;
-         transition: color 0.15s linear;
-      }
-
-      ul li a:hover {
-         color: #DD4B39;
-      }
-
-      ul li.active a.active {
-         font-weight: 600px;
-      }
-   </style>
+   <!-- css -->
+   <style type="text/css">[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }</style>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<center>
-   <div class="navbar-header" style="padding: 31px 0 12px 0;">
-      <a href="http://miniease.shoplineapp.com/">
-         <img src="https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&amp;url=https://img-shoplineapp-com.s3.amazonaws.com/media/image_clips/58355fce6170690aed060100/original.png?1479892941&amp;resize_h=140px" class="logo-image">          
-      </a>
+<div class="container ng-cloak" ng-controller="MainCtrl" ng-cloak>
+   <div class="logo"></div>
+   <div class="content">
+      <div ng-repeat="item in menu_items">
+         <div class="item_title" ng-click="setShow(item)">{{item.key}}</div>
+         <div class="item_content" ng-include="'html/' + item.key + '.html'" ng-if="item.show"></div>
+      </div>
    </div>
-   <div class="navbar-menu">
-      <ul class="text-primary-color">
-         <li class="">
-            <a class="" href="http://miniease.shoplineapp.com" target="">主頁</a>
-         </li>
-         <li class="">
-            <a class="" href="http://miniease.shoplineapp.com" target="">商店介紹</a>
-         </li>
-         <li class="">
-            <a class="" href="http://miniease.shoplineapp.com" target="">所有商品</a>
-         </li>
-         <li class="active">
-            <a class="active" href="">測試</a>
-         </li>
-      </ul>
-   </div>
-</center>
+</div>
 </body>
 </html>
