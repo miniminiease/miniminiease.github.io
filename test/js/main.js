@@ -13,12 +13,16 @@ var MainCtrl = function($scope, $location, $compile, $filter) {
    function init() {
       $scope.menu_items = [
          {  key: 'about',
+            display: 'about',
             show: false },
          {  key: 'brands',
+            display: 'brands',
             show: false },
          {  key: 'online_shop',
+            display: 'shop',
             show: false },
          {  key: 'contact',
+            display: 'contact',
             show: false }
       ];
    }
