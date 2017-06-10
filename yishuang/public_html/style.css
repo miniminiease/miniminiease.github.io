@@ -1,0 +1,374 @@
+body {
+    background-image: url(imgs/bgcolor.jpg);
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    color: black;
+    margin: 15px 5px;
+    padding: 0;
+    font-family: 'Helvetica Neue', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: small;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: small;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: small;
+    font-weight: bold;
+    margin: 13px 0 2px 0;
+    color: #69C;
+}
+
+#Container {
+    width: 900px;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+}
+
+#Logo {
+    background-image: url(imgs/logo.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    width: 180px;
+    height: 36px;
+}
+
+#LogoLarge {
+    background-image: url(imgs/logo_large.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    width: 292px;
+    height: 53px;
+}
+
+#Language {
+    float: right;
+    color: white;
+    margin-top: -36px;
+}
+
+#Language a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Language a:hover {
+    color: #333;
+}
+
+#MainMenu {
+    text-transform: uppercase;
+    background-image: url(imgs/banner.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    width: 900px;
+    height: 265px;
+    padding: 0 0 0 93px;
+}
+
+#MainMenu ul {
+    float: left;
+    list-style: none;
+    padding: 0;
+}
+
+#MainMenu ul ul {
+    margin: 0;
+}
+
+#MainMenu a, #MainMenu h2 {
+    font-family: 'Helvetica Neue', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: small;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding: 2px 3px;
+}
+
+#MainMenu h2 {
+    color: #000;
+    background: transparent;
+}
+
+#MainMenu ul a, #MainMenu ul a:visited {
+    background: transparent;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#MainMenu ul a:hover {
+    background: transparent;
+    text-decoration: none;
+    color: #888;
+}
+
+#MainMenu li {
+    position: relative;
+}
+
+#MenuNews {
+    width: 147px;
+    margin-top: 183px;
+}
+
+#MenuNews a, #MenuNews a:visited {
+    color: #333;
+}
+
+#MenuNews a:hover {
+    //color: #F36;
+}
+
+#MenuProducts {
+    width: 292px;
+    margin-top: 171px;
+}
+
+#MenuProducts a, #MenuProducts a:visited {
+    color: #333;
+}
+
+#MenuProducts a:hover {
+    //color: #FC3;
+}
+
+#MenuAbout {
+    width: 283px;
+    margin-top: 145px;
+}
+
+#MenuAbout a, #MenuAbout a:visited {
+    color: #333;
+}
+
+#MenuAbout a:hover {
+    //color: #0C6;
+}
+
+#MenuContact {
+    width: 120px;
+    margin-top: 183px;
+}
+
+#MenuContact a, #MenuContact a:visited {
+    color: #333;
+}
+
+#MenuContact a:hover {
+    //color: #96F;
+}
+
+#SideBar {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+ul#SubMenu {
+    background: #FCC;
+    border: 10px solid #FCC;
+    width: 125px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    color: #444;
+    line-height: 20px;
+    margin: 0;
+}
+
+ul#SubMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+ul#SubMenu a:hover {
+    text-decoration: none;
+    color: #C33;
+}
+
+ul#SubMenu ul {
+    list-style: square;
+    list-style-position: outside;
+    margin-left: 20px;
+    padding: 0;
+}
+
+ul#SubMenu ul a {
+    text-decoration: none;
+    color: white;
+}
+
+ul#SubMenu ul a:hover {
+    text-decoration: none;
+    color: #C33;
+}
+
+#SubMenuSelection {
+    color: #C33 !important;
+}
+
+#SubMenuSelection {
+    color: #C33 !important;
+}
+
+#SubHead {
+    background-image: url(imgs/side_bg_head.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+    width: 145px;
+    height: 46px;
+}
+
+#SubTail {
+    background-image: url(imgs/side_bg_tail.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+    width: 162px;
+    height: 25px;
+    margin-left: -17px;
+}
+
+#Content {
+    background-image: url(imgs/contentbgcolor.jpg);
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: scroll;
+    padding: 50px 20px;
+    min-height: 300px;
+}
+
+.oneItem {
+        float: right;
+	width: 660px;
+	background: white; 
+	padding: 10px;
+	margin: 0 0 35px 0;
+        font-weight: normal;
+}
+
+.oneItem div {
+        width: 260px;
+	float: left;
+}
+
+.oneItem img {
+	width: 380px;
+        float: right;
+        margin: 0;
+}
+
+.productNormal {
+	padding: 0;
+	margin: 0;
+	font-size: small;
+	color: #66F;
+}
+
+.productDescription {
+	background: #EEF;
+	padding: 10px;
+}
+
+#Footer {
+    height: 20px;
+    font-size: x-small;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 6px;
+    color: #666;
+}
+
+#ContentBody {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0 45px 0;
+}
+
+#ContentBody ul {
+    list-style-image:url(imgs/heartmark.jpg);
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+#ContentBody li {
+    line-height: 1.5em;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.newsDate {
+}
+
+.newsBody {
+}
+
+.ContentBox {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+#pagingZone {
+    float: right;
+    width: 660px;
+    margin: -9px 0 8px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.paging {
+    float: right;
+    display: none;
+    cursor: pointer;
+    color: #69F;
+    margin: -1.5px 0;
+}
+
+#prevPage {
+    margin-right: 10px;
+    display: block;
+}
+
+#nextPage {
+    margin-left: 10px;
+    display: block;
+}
+
+.paging:hover {
+    color: white;
+}
+
+#pageNum {
+    float: right;
+    color: #555;
+}

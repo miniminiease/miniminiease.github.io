@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Yi Shuang Enterprise Co., Ltd.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load('visualization', '1', {packages: ['table']});
+</script>
+<script type="text/javascript" src="js/main_en.js"></script>
+<script type="text/javascript">
+	var dataSourceUrl = 'http://spreadsheets.google.com/tq?key=0AvGmiThIfZAVdG1janVpQ1JWczZPS0FVYjZDX3hBTGc&pub=1';
+	var query = new google.visualization.Query(dataSourceUrl);
+        var numPerPage = 5;
+        var _key="";
+        var _productMenuHtml = "";
+
+        var data = null;
+
+	function sendAndDraw() {
+		// Send the query with a callback function.
+		query.send(handleQueryResponse);
+	}
+
+	function handleQueryResponse(response) {
+		if (response.isError()) {
+			alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+			return;
+		}
+		data = response.getDataTable();
+
+                fillCurrentPageProductContent(_productMenuHtml, _key, data, 0, numPerPage);
+	}
+
+	function showProduct(key, menuHTML) {
+                _key=key;
+                _productMenuHtml = menuHTML;
+		var qstring = "select B,C,E,G,H where A = '" + key + "'";
+		query.setQuery(qstring);
+		sendAndDraw();
+	}
+</script>
+</head>
+<body>
+<div id="Container">
+
+<a href="index.html"><div id="Logo">&nbsp;</div></a>
+<div id="Language">
+    <a href="">中文</a>
+    |
+    <a href="index_en.html?news">English</a>
+</div>
+
+<div id="MainMenu">
+    <ul id="MenuNews">
+        <li><h2><a href="index_en.html?news">news</a></h2></li>
+    </ul>
+    <ul id="MenuProducts">
+        <li><h2><a href="index_en.html?products">products</a></h2></li>
+    </ul>
+    <ul id="MenuAbout">
+        <li><h2><a href="index_en.html?about">about</a></h2></li>
+    </ul>
+    <ul id="MenuContact">
+        <li><h2><a href="index_en.html?contact">contact</a></h2></li>
+    </ul>
+</div>
+
+<div id="Content">
+</div>
+
+<div id="Footer">
+    &copy; 2011 YI SHUANG ENTERPRISE CO., LTD.
+</div>
+
+</div>
+
+<script type="text/javascript">
+<!--
+    getPageFromUrlParam()
+-->
+</script>
+</body>
+</html>
