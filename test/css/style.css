@@ -26,15 +26,15 @@ body, html {
    background-repeat: repeat-x repeat-y;
    background-size: auto 170px;
    /* IE 8 */
-   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-   /* IE 6-7 */
-   filter: alpha(opacity=60);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+   /* IE 3-7 */
+   filter: alpha(opacity=30);
    /* Netscape */
-   -moz-opacity: 0.6;
+   -moz-opacity: 0.3;
    /* Safari 1.x */
-   -khtml-opacity: 0.6;
+   -khtml-opacity: 0.3;
    /* Good browsers */
-   opacity: 0.6;
+   opacity: 0.3;
 }
 
 .container .logo {
@@ -64,6 +64,11 @@ body, html {
 
 .container .content .item_content .include_content {
    max-width: 600px;
-   padding: 5px 10px;
-   line-height: 1.2em;
+   padding: 1em 10px 2em 10px;
+   line-height: 1.6em;
+   text-align: center;
+}
+
+.container .content .item_content .include_content p {
+   margin-bottom: 0.8em;
 }
