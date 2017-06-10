@@ -1,0 +1,81 @@
+* {
+   font-family: Calibri, 'helvetica neue', sans-serif;
+}
+
+html, body {
+   font-family: Calibri, 'helvetica neue', sans-serif;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	color: #9CC;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.logo {
+   height: 20px;
+   width: 90px;
+   background-image: url(../imgs/logo_miniease.svg);
+   background-position: 0% 50%;
+   background-size: auto 100%;
+}
+
+table.list td {
+   padding-right: 1.4em;
+}
+
+/* header */
+.header {
+   padding: 1.4em 0;
+}
+
+.header .logo {
+   cursor: pointer;
+}
+
+/* menu */
+.menu ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+.menu ul ul {
+   padding-left: 1.4em;
+   display: none;
+}
+
+.menu ul li.active ul {
+   display: block;
+}
+
+.menu li { cursor: pointer; }
+.menu li:hover { color: #999; }
+.menu li.active { color: #9CC; }
+
+.menu li ul { color: black; }
+.menu li ul li.active { color: #9CC; }
+
+/* brand */
+.row.brand-img {
+   margin-top: 50px;
+}
+
+/* carousel */
+.carousel-control.left,
+.carousel-control.left:hover,
+.carousel-control.right,
+.carousel-control.right:hover {
+   background-image: none;
+}
