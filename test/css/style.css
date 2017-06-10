@@ -8,6 +8,16 @@ body, html {
    height: 100%;
 }
 
+a {
+   color: #3593B7;
+   text-decoration: none;
+}
+
+a:hover {
+   color: black;
+   text-decoration: underline;
+}
+
 .container {
    width: 100%;
    padding: 100px 0 50px 0;
