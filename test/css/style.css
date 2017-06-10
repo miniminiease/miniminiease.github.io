@@ -4,7 +4,7 @@
 }
 
 body, html {
-   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-family: 'Varela Round', Arial, sans-serif;
    height: 100%;
 }
 
@@ -67,6 +67,7 @@ body, html {
    padding: 1em 10px 2em 10px;
    line-height: 1.6em;
    text-align: center;
+   font-weight: bold;
 }
 
 .container .content .item_content .include_content p {
