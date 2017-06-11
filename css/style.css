@@ -4,7 +4,8 @@
 }
 
 body, html {
-   font-family: 'Quicksand', Arial, sans-serif;
+   font-family: 'Jaldi', Arial, sans-serif;
+   font-size: 16px;
    height: 100%;
 }
 
@@ -57,7 +58,7 @@ a:hover {
 
 .container .content {
    width: 100%;
-   margin-top: 35px;
+   margin-top: 2em;
 }
 
 .container .content .item_title,
@@ -67,18 +68,20 @@ a:hover {
 
 .container .content .item_title {
    text-align: center;
-   font-size: 40px;
+   font-size: 2em;
+   line-height: 1.2em;
    cursor: pointer;
    text-transform: uppercase;
 }
 
 .container .content .item_content .include_content {
    max-width: 600px;
-   padding: 1em 10px 2em 10px;
-   line-height: 1.6em;
+   font-size: 1.1em;
+   line-height: 1.4em;
+   padding: 1em 10px 1.5em 10px;
    text-align: center;
 }
 
 .container .content .item_content .include_content p {
-   margin-bottom: 0.8em;
+   margin-bottom: 0.6em;
 }
