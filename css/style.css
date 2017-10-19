@@ -85,3 +85,33 @@ a:hover {
 .container .content .item_content .include_content p {
    margin-bottom: 0.6em;
 }
+
+.container .content .item_title a.sns {
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   margin-top: 0.3em;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+}
+
+.container .content .item_title a.sns:hover {
+   /* IE 8 */
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+   /* IE 5-7 */
+   filter: alpha(opacity=50);
+   /* Netscape */
+   -moz-opacity: 0.5;
+   /* Safari 1.x */
+   -khtml-opacity: 0.5;
+   /* Good browsers */
+   opacity: 0.5;
+}
+
+.container .content .item_title a.sns_fb {
+   background-image: url(../imgs/sns_fb.svg);
+}
+
+.container .content .item_title a.sns_ig {
+   background-image: url(../imgs/sns_ig.svg);
+}
